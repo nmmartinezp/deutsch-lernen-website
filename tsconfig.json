@@ -19,7 +19,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@modules/*": ["./src/(modules)/*"],
+      "@home/*": ["./src/(modules)/(inicio)/*"],
+      "@lessons/*": ["./src/(modules)/lecciones/*"],
+      "@vocabulary/*": ["./src/(modules)/vocabulario/*"]
     }
   },
   "include": [
