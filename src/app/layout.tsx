@@ -28,30 +28,33 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <NavBar.Logo
                 src="/images/logo.svg"
                 alt="Logo de la pagina deutsch lernen"
-                width={350}
-                height={350}
+                width={2000}
+                height={2000}
               />
               <NavBar.Content>
-                <NavBar.Item href="/" className="max-lg:bg-[#f6c82c]/20">
+                <NavBar.Item
+                  href="/"
+                  className="max-lg:bg-black/60 max-lg:text-[#f6c82c] max-lg:text-2xl"
+                >
                   Inicio
                 </NavBar.Item>
                 <NavBar.Item
                   href="/lecciones"
-                  className="max-lg:bg-[#f6c82c]/20"
+                  className="max-lg:bg-black/60 max-lg:text-[#f6c82c] max-lg:text-2xl"
                 >
                   Lecciones
                 </NavBar.Item>
                 <NavBar.Item
                   href="/vocabulario"
-                  className="max-lg:bg-[#f6c82c]/20"
+                  className="max-lg:bg-black/60 max-lg:text-[#f6c82c] max-lg:text-2xl"
                 >
                   Vocabulario
                 </NavBar.Item>
               </NavBar.Content>
             </NavBar>
           </header>
-          <main className="min-h-[70dvh] bg-amber-300">{children}</main>
-          <footer className="min-h-[70dvh] bg-amber-800"></footer>
+          <main className="w-full">{children}</main>
+          <footer className=""></footer>
         </NavBarProvider>
       </body>
     </html>
