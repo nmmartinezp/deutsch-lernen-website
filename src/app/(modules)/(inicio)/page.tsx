@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Eye } from "lucide-react";
+import { ArrowRight, Eye, BookOpen } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Deutsch lernen",
@@ -65,6 +65,28 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="w-full bg-gray-200 px-18">
+        <div className="w-full flex justify-between items-center">
+          <div className="flex items-center gap-4">
+            <div className="h-12">
+              <BookOpen className="size-full" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold">Lecciones</h2>
+              <p className="text-gray-500 font-semibold">
+                Ver las lecciones en orden o como gustes.
+              </p>
+            </div>
+          </div>
+          <Link
+            href={"/lecciones"}
+            className="flex gap-2 font-semibold hover:underline"
+          >
+            Ver todas las lecciones
+            <ArrowRight />
+          </Link>
         </div>
       </section>
     </>
